@@ -22,10 +22,8 @@ class Deck:
 
 
 class Ship:
-    def __init__(
-        self, start: Tuple[int, int], end: Tuple[int, int],
-            is_drowned: bool = False
-    ) -> None:
+    def __init__(self, start: Tuple[int, int], end: Tuple[int, int],
+                 is_drowned: bool = False) -> None:
         """
         Инициализация корабля.
 
@@ -92,8 +90,8 @@ class Ship:
         """
         Возвращает строковое представление корабля.
         """
-        return (f"Ship(start={self.start}, "
-                f" end={self.end}, is_drowned={self.is_drowned})")
+        return (f"Ship(start={self.start}, end={self.end}, "
+                f"is_drowned={self.is_drowned})")
 
 
 class Battleship:
